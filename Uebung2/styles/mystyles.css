@@ -1,0 +1,20 @@
+body {
+    font-family: Verdana;
+}
+
+h1 {
+  background-color: #80ced6;
+}
+#main {
+	z-index: 10;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 156px;
+	width: 730px;
+	background-color: #ffffff;
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	line-height: 1.5;
+}
