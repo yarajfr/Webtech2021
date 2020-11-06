@@ -8,51 +8,68 @@
 
     <style>
           body{
-                font-family:Verdana;
+                    font-family: Arial;
            }
 
 
-            a{
-                color: orange;
-            }
+          a{
+                    color: #FF5F00;
+                    font-size: larger;
+                    font-family: Arial;
+          }
 
-            nav{
-                 background: lightgray;
-            }
+          a:hover {   /* mouse over */
+                    color:#0082D1;
+          }
+
+          nav{
+                    background: lightgray;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    margin-bottom: 20px;
+          }
+
+          tr:hover{
+                     background-color:#76B900;
+          }
 
 
-
-              footer{
-                      color: black;
-                      font-size: 14px;
-                      padding: 20px 112px;
-                      background: #FF5F00;
-                      margin-bottom: 50px;
-	                  height:40px;
+          footer{
+                      color: white;
+                      font-size: 17px;
+                      padding: 30px 140px;
+                      background: grey;
+                      margin-bottom: 60px;
+	                  height:20px;
 	                  text-align: center;
-                     }
+                      padding-bottom: 40px;
+                      padding-top: 10px
+          }
 
-              header{
-                       color: #FF5F00;
-                       background: #AFAFAF;
-                       text-align: center;
-                    }
+          h1{
+                      padding-top: 40px;
+                      padding-bottom: 40px;
+          }
 
-               h3{
-                        color: black;
-                        padding: 7px 140px;
-                    }
 
-               div{
+          div{
                         text-align: center;
                         font-size: smaller;
-               }
+          }
 
-               img{
+          img{
                         display: flex;
                         justify-content: left;
-               }
+          }
 
+          #img{
+                        position: absolute;
+                        top: 10px;
+                        left: 4px;
+                        margin: 90px;
+                        padding: 3px;
+                        margin-left: 30px;
+          }
 
 
     </style>
@@ -62,30 +79,27 @@
 <div class="jumbotron">
         <div class="container">
         <h1 class="display-5" >Teilnehmerinnen WebTech</h1>
-        <img src="../images/fiw.jpg" style="width: 67px; height=48px;"/>
+        <img id="img" src="../images/fiw.jpg" style="width: 67px; height=48px;" alt="Logo FIW"/>
         </div>
 </div>
 
 
-<nav class="navbar navbar-expand-lg">
-    <ul class="navbar-nav">
+<nav>
+    <ul class="nav">
         <li class="nav-item active">
-            <a class="nav-link" href="uebung2.html">ALLE <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="uebung3.html">ALLE</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="ag.html">A-G</a>
+            <a class="nav-link" href="#A">A-G</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="hl.html">H-L</a>
+            <a class="nav-link" href="#H">H-L</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="mr.html">M-R</a>
+            <a class="nav-link" href="#M">M-R</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="sz.html">S-Z</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="uebung2.html">Startseite</a>
+            <a class="nav-link" href="#S">S-Z</a>
         </li>
 </nav>
 
@@ -101,7 +115,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
+        <tr id="A">
             <td>Adam</td>
             <td>Anderson</td>
             <td>aanderson8@google.fr</td>
@@ -221,7 +235,7 @@
             <td>vgrahamk@aol.com</td>
             <td>165.219.171.1</td>
         </tr>
-        <tr>
+        <tr id="H">
             <td>Steven</td>
             <td>Hamilton</td>
             <td>shamiltonu@state.tx.us</td>
@@ -257,7 +271,7 @@
             <td>akim4@odnoklassniki.ru</td>
             <td>168.244.191.78</td>
         </tr>
-        <tr>
+        <tr id="M">
             <td>Jennifer</td>
             <td>Marshall</td>
             <td>jmarshallt@gnu.org</td>
@@ -347,7 +361,7 @@
             <td>kroseg@pinterest.com</td>
             <td>222.172.140.56</td>
         </tr>
-        <tr>
+        <tr id="S">
             <td>Steve</td>
             <td>Sanders</td>
             <td>ssanders1b@wikispaces.com</td>
@@ -404,7 +418,7 @@
         </tbody>
     </table>
 </section>
-<footer>Yara Jaafar -- Aufgabe 2</footer>
+<footer>Übung 3 - Yara Jaafar</footer>
 
 
 </body>
