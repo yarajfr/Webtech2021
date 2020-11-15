@@ -1,73 +1,273 @@
-<style>
-            table, th, td {
-                  border: 1px solid black;
+<!DOCTYPE html>
+<html lang="de">
+<head>
+            <meta charset="UTF-8">
+            <title>WebTech20</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+            <title>Teilnehmer_innen von M-R</title>
+</head>
+<body>
+        <header>
+            <h1 style="color: #FF5F00; background-color: #AFAFAF;">Teilnehmer_innen WebTech</h1>
+            <img src="../images/fiw.jpg" style="width:53px; height:48px;" alt="FIW Logo"/>
+
+
+        <style>
+            body{
+                font-family: Arial,serif;
             }
-            table {
-                    width: 70%;
-                    border-collapse: collapse;
-                  }
 
-             td {
-                    height: 30px;
-                    vertical-align: center;
-                }
-             th, td {
-                     padding: 8px;
-                    }
-            tr:hover {background-color:#f5f5f5;}
 
-            th {
-                background-color: #76B900;
+            a{
+                color: #FF5F00;
+                font-size: larger;
+                font-family: Arial,serif;
+            }
+
+            a:hover {   /* mouse over */
+                color:#0082D1;
+            }
+
+            nav{
+                background: lightgray;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-bottom: 20px;
+            }
+
+            tr:hover{
+                background-color:#76B900;
+            }
+
+
+            footer{
                 color: white;
-               }
-    </style>
+                font-size: 17px;
+                padding: 30px 140px;
+                background: grey;
+                margin-bottom: 60px;
+                height:20px;
+                text-align: center;
+                padding-bottom: 40px;
+                padding-top: 10px
+            }
 
-<center><table></center>
-    <thead>
-    <tr>
-        <th>Vorname</th>
-        <th>Nachname</th>
-        <th>E-Mail-Adresse</th>
-        <th>IP-Adresse</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <tr>
-        <td>Steven</td>
-        <td>Hamilton</td>
-        <td>shamiltonu@state.tx.us</td>
-        <td>38.194.91.201</td>
-    </tr>
-    <tr>
-        <td>Virginia</td>
-        <td>Hawkins</td>
-        <td>vhawkinsf@ehow.com</td>
-        <td>93.120.46.203</td>
-    </tr>
-    <tr>
-        <td>Edward</td>
-        <td>Hicks</td>
-        <td>ehicksc@pcworld.com</td>
-        <td>199.153.27.1</td>
-    </tr>
-    <tr>
-        <td>Mark</td>
-        <td>Johnson</td>
-        <td>mjohnsonj@hostgator.com</td>
-        <td>73.87.135.206</td>
-    </tr>
-    <tr>
-        <td>Ruth</td>
-        <td>Jordan</td>
-        <td>rjordan1a@smugmug.com</td>
-        <td>193.140.80.64</td>
-    </tr>
-    <tr>
-        <td>Antonio</td>
-        <td>Kim</td>
-        <td>akim4@odnoklassniki.ru</td>
-        <td>168.244.191.78</td>
-    </tr>
-    </tbody>
+            h1{
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+
+            div{
+                text-align: center;
+                font-size: smaller;
+            }
+
+            img{
+                display: flex;
+                justify-content: left;
+            }
+
+            #img {
+                position: absolute;
+                top: 10px;
+                left: 4px;
+                margin: 90px;
+                padding: 3px;
+                margin-left: 30px;
+            }
+
+            .rechts, .links {
+                background-color: lightgrey;
+                height: 100px;
+            }
+
+            @media screen and (min-width: 992px) {
+                .rechts, .links {
+                    background-color: lightgrey;
+                    height: auto;
+                }
+            }
+
+        </style>
+   </header>
+
+    <section>
+        <h3>Alle Teilnehmer_innen von M-R</h3>
+        <table>
+            <thead>
+            <div class="links col-12 col-lg-2">
+                <h2>links</h2>
+            </div>
+            <div class="table-responsive col-12 col-lg-8">
+                <div class="table table-striped table-hover">
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>E-Mail-Adresse</th>
+                <th>IP-Adresse</th>
+            </tr>
+            </thead>
+            <table>
+            <tr>
+            <tr>
+                <td>Steven</td>
+                <td>Hamilton</td>
+                <td>shamiltonu@state.tx.us</td>
+                <td>38.194.91.201</td>
+            </tr>
+            <tr>
+                <td>Virginia</td>
+                <td>Hawkins</td>
+                <td>vhawkinsf@ehow.com</td>
+                <td>93.120.46.203</td>
+            </tr>
+            <tr>
+                <td>Edward</td>
+                <td>Hicks</td>
+                <td>ehicksc@pcworld.com</td>
+                <td>199.153.27.1</td>
+            </tr>
+            <tr>
+                <td>Mark</td>
+                <td>Johnson</td>
+                <td>mjohnsonj@hostgator.com</td>
+                <td>73.87.135.206</td>
+            </tr>
+            <tr>
+                <td>Ruth</td>
+                <td>Jordan</td>
+                <td>rjordan1a@smugmug.com</td>
+                <td>193.140.80.64</td>
+            </tr>
+            <tr>
+                <td>Antonio</td>
+                <td>Kim</td>
+                <td>akim4@odnoklassniki.ru</td>
+                <td>168.244.191.78</td>
+            </tr>
+            <tr id = "e1">
+                <td> <input id="i1" type="text" class="form-control" placeholder="Vorname"  /></td>
+                <td> <input id="i2" type="text" class="form-control" placeholder="Nachname" /></td>
+                <td> <input id="i3" type="text" class="form-control" placeholder="Email-Adresse" /></td>
+
+                <td>
+                    <input id="i4" type="text" class="form-control" placeholder="IP-Adresse" />
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-dark" onclick="checkAndAdd()">Add</button>
+                </td>
+
+            </tr>
+         </table>
+     </div>
+ </tbody>
 </table>
+ <div class="rechts col-12 col-lg-2">
+        <h2>rechts</h2>
+        </div>
+    </section>
+        <footer>
+            <p>Yara Jaafar -- Aufgabe 2</p>
+        </footer>
+        <script>
+            let input1 =  document.getElementById('i1');
+            let input2 =  document.getElementById('i2');
+            let input3 =  document.getElementById('i3');
+            let input4 =  document.getElementById('i4');
+
+
+            input1.addEventListener('input', function (event)
+            {
+
+                this.classList.remove('is-invalid');
+            })
+
+            input2.addEventListener('input', function (event) {
+                this.classList.remove('is-invalid');
+            })
+
+            input3.addEventListener('input', function (event) {
+                this.classList.remove('is-invalid');
+
+            })
+
+            input4.addEventListener("input", function (event) {
+                this.classList.remove('is-invalid');
+            })
+
+
+
+            function checkAndAdd(){
+
+
+
+                let e1 = document.getElementById('e1');
+                let new_tr = document.createElement('tr');
+                let parent = document.getElementById('28');
+
+
+
+
+
+
+
+                if(input1.value!=""&&input2.value!=""&&input3.value!=""&&input4.value!="") {
+
+
+                    let new_td1 = document.createElement('td');
+                    new_td1.innerHTML = input1.value;
+
+                    let new_td2 = document.createElement('td');
+                    new_td2.innerHTML = input2.value;
+
+                    let new_td3 = document.createElement('td');
+                    new_td3.innerHTML = input3.value;
+
+                    let new_td4 = document.createElement('td');
+                    new_td4.innerHTML = input4.value;
+
+                    let new_td5 = document.createElement('td');
+
+                    new_tr.append(new_td1, new_td2, new_td3, new_td4, new_td5);
+
+
+                    parent.insertBefore(new_tr, e1);
+
+                    input1.value="";
+                    input2.value="";
+                    input3.value="";
+                    input4.value="";
+
+                }
+
+                else
+                {
+                    if(input1.value=="")
+                    {
+                        input1.classList.add('is-invalid')
+                    }
+
+                    if(input2.value=="")
+                    {
+                        input2.classList.add('is-invalid')
+                    }
+
+                    if(input3.value=="")
+                    {
+                        input3.classList.add('is-invalid')
+                    }
+
+                    if(input4.value=="")
+                    {
+                        input4.classList.add('is-invalid')
+                    }
+
+
+                }
+            }
+
+        </script>
+</body>
+</html>
