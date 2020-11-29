@@ -1,28 +1,116 @@
-<style>
-            table, th, td {
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>WebTech20</title>
+    <link rel="stylesheet" href="../styles/mystyles.css">
+
+    <style>
+          body{
+                font-family:Verdana;
+           }
+
+           table, th, td {
                   border: 1px solid black;
             }
+
             table {
-                    width: 70%;
+                    width: 80%;
+                    margin: 0 auto;
                     border-collapse: collapse;
+                    font-family: Verdana;
+                    box-shadow: 5px 10px #888888;
+
                   }
 
              td {
                     height: 30px;
                     vertical-align: center;
                 }
+
              th, td {
                      padding: 8px;
                     }
+
             tr:hover {background-color:#f5f5f5;}
 
             th {
                 background-color: #76B900;
                 color: white;
                }
+
+            nav {
+                  margin-bottom: 50px;
+                }
+
+            a {
+                  display: inline-block;
+                  background: #0082D1;
+                  color: white;
+                  border-radius: 1em;
+                  border-color: #AFAFAF;
+                  border-style: solid;
+                  border-width: 2px;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+              }
+
+              a:link {
+                      color:red;
+                      }
+
+              a:visited {
+                      color:darkgrey;
+                       }
+
+              a:hover {
+                      color:red;
+                      }
+
+              a:active {
+                      color:lightblue;
+                       }
+
+              footer{
+                      color: black;
+                      font-size: 16px;
+                      padding-top: 20px;
+                      padding-bottom: 20px;
+                      background: #FF5F00;
+                      margin-bottom: 50px;
+	                  height:40px;
+	                  text-align: center;
+                     }
+
+              header{
+                       color: #FF5F00;
+                       background: #AFAFAF;
+                       text-align: center;
+                    }
+
     </style>
 
-<center><table></center>
+<body>
+<header>
+    <h1 style="color: #FF5F00; background-color: #AFAFAF;">Teilnehmer_innen WebTech</h1>
+    <img src="../images/fiw.jpg" alt="FIW-Logo" style="width: 53px; height=48px;"/>
+</header>
+
+<nav>
+
+        <ul align="left">
+        <a href="uebung2.html">ALLE</a>
+        <a href="ag.html">A-G</a>
+        <a href="hl.html">H-L</a>
+        <a href="mr.html">M-R</a>
+        <a href="sz.html">S-Z</a>
+        <a href="uebung2.html">Startseite</a>
+
+</nav>
+<section>
+    <h3>Teilnehmer_innen A-G</h3>
+    <table>
     <thead>
     <tr>
         <th>Vorname</th>
@@ -137,3 +225,4 @@
     </tr>
     </tbody>
 </table>
+    <footer>Yara Jaafar -- Aufgabe 2</footer>
