@@ -33,6 +33,38 @@
 
 
 	// die Funktion, die die Tablle erzeugt
+
+	function filterSearch()
+
+	{
+
+		staedte = staedte_obj.staedte;
+		staedte2 = new Array();
+		let fS = document.getElementById('filter');
+
+		console.log("test0");
+
+
+		for(let i =  0; i < this.staedte.length; i++)
+		{
+
+			if(staedte[i].stadt.includes(fS.value) || staedte[i].jahr.toString().includes(fS.value)  || staedte[i].stadt.toLowerCase().includes(fS.value) )
+			{
+				staedte2.push(staedte[i]);
+
+
+			}
+		}
+
+		staedte = staedte2;
+		createTable();
+
+
+
+
+	}
+
+
 	function createTable()
 	{
 		let input = document.getElementById('filter').value;		// eingegbene Daten (Formular)
@@ -93,6 +125,76 @@
 		table.appendChild(tbody);
 		tableDiv.appendChild(table);
 	}
+
+	for(let i = 0 ; i < staedte.length;i++)
+	{
+
+
+		let tr1 = document.createElement('TR');
+
+		let td1 = document.createElement('TD');
+		td1.innerHTML = '' + (i+1) ;  //Nummer
+		let td2 = document.createElement('TD');
+		td2.innerHTML= staedte[i].jahr;
+		//Jahr
+		let td3 = document.createElement('TD');
+		td3.innerHTML = staedte[i].stadt;//Stadt
+
+
+
+
+		let btn = document.createElement("BUTTON");
+		btn.innerHTML = "Info";
+		btn.setAttribute("class", "btn btn-sm btn-success");
+
+		let a = document.createElement("A");
+		a.setAttribute("href", staedte[i].link);
+		a.appendChild(btn);
+
+
+		let td4 = document.createElement('TD');
+		td4.appendChild(a);//Link
+
+
+
+
+
+
+
+
+		let pic = document.createElement("IMG");
+		pic.src = staedte[i].bild;
+		pic.setAttribute("height", "60");
+		let td5 = document.createElement('TD');
+		td5.appendChild(pic);//Bild
+
+
+
+		tr1.append(td1,td2,td3,td4,td5);
+		tbody.appendChild(tr1);
+	}
+
+
+	}
+
+	function loadJSON()
+	{
+		let xhttp = new XMLHttpRequest();
+
+		xhttp.onreadystatechange = function() {
+			if (this.readyState === 4 && this.status === 200)  {
+				staedte_obj = JSON.parse(this.responseText);
+				staedte = staedte_obj.staedte;
+
+
+
+				createTable();
+
+			}};
+		xhttp.open("GET", "http://localhost/Webtech20/Uebung5/staedte.json", true);
+		xhttp.send();
+	}
+
 
 	// hier noch eine Funktion, die das Bild, auf das geklickt wurde, in
 	// das Div "unten" clont
