@@ -1,6 +1,8 @@
 export interface Data {
+
   id: number;
-  forename: string;
-  surname: string;
+  firstname: string;
+  lastname: string;
   email: string;
+
 }
